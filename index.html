@@ -1,11 +1,16 @@
 <html>
-<title>Hello</title>
-<body>
-Hello world! UPDATED<br/>
-<script>
+  <head>
+  <script>
+  function update(str) {
+     document.getElementById("content").innerHTML = str;
+  }
   fetch('https://tc-api.azurefd.net/clinics/FindClinics?name=Christer')
     .then(res => res.text())
-    .then(res => console.log(res));
-  </script>
+    .then(res => update(res));
+  </script>  
+  <title>Hello</title>
+<body>
+Hello world!<br/>
+<div id="content">Loading...</div>
 </body>
 </html>
