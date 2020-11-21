@@ -3,9 +3,9 @@
 <body>
 Hello world! UPDATED<br/>
 <script>
-  let response = await fetch("https://tc-api.azurefd.net/clinics/FindClinics?name=Christer"); 
-  if(response.ok)
-    document.write(response.text());
+  fetch('https://tc-api.azurefd.net/clinics/FindClinics?name=Christer')
+    .then(res => res.text())
+    .then(res => console.log(res));
   </script>
 </body>
 </html>
