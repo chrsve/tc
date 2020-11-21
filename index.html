@@ -1,6 +1,12 @@
 <html>
 <title>Hello</title>
 <body>
-Hello world! UPDATED
+Hello world! UPDATED<br/>
+<script>
+  fetch("https://tc-api.azurefd.net/clinics/FindClinics?name=Christer")
+  .then(function (response) {
+    return response.text();
+  });
+  </script>
 </body>
 </html>
