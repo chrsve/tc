@@ -16,7 +16,7 @@ cfg: { // Application Insights Configuration
   <title>Hello</title>
 <body>
 Hello world!<br/>
-<div id="content">Loading...</div>
+<div id="content">Loading...</div><br/>
 <script>
   function update(str) {
      document.getElementById("content").innerHTML = str;
@@ -25,5 +25,6 @@ Hello world!<br/>
     .then(res => res.text())
     .then(res => update(res));
 </script>
+  <a href="javascript:fetch('https://tc-api.azurefd.net/clinics/FindClinics?name=Manuel')">Update</a>
 </body>
 </html>
