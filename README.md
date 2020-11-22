@@ -1,7 +1,7 @@
 # tc
 
-##Prod environment
+## Prod environment
 
--Azure Static Web Apps
--Azure Front Door
--Azure Functions
+- Azure Static Web Apps
+- Azure Front Door
+- Azure Functions
